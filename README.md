@@ -6,7 +6,8 @@
 ![CUDA](https://img.shields.io/badge/CUDA-11.4-76B900)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED)
 
-> **서강대학교 강화학습개론 프로젝트** > **Topic:** 강화학습 기반 DQN을 적용하여 프레임 단위 Sound Event Detection의 **강화학습 기반 Threshold 최적화** 프로젝트입니다.
+> **서강대학교 강화학습개론 프로젝트**   
+>  **Topic:** 강화학습 기반 DQN을 적용하여 프레임 단위 Sound Event Detection의 **Threshold 최적화** 프로젝트입니다.
 
 <br>
 
@@ -16,7 +17,7 @@
 Sound Event Detection(SED) 성능을 최적화하는 것을 목표로 합니다.
 
 - DQN 기반 Threshold 조정 모델 구현  
-- State–Action–Reward 구조 기반 학습  
+- 적절한 State–Action–Reward 구조 설계  
 - Threshold 변화에 따른 Detection 결과 분석  
 - Validation 기반 성능 평가
 <br>
