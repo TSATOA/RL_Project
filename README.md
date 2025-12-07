@@ -21,6 +21,15 @@ Sound Event Detection(SED) 성능을 최적화하는 것을 목표로 합니다.
 - Validation 기반 성능 평가
 <br>
 
+## 📄 Download Final Report & Presentation
+
+본 프로젝트의 최종 산출물은 아래에서 다운로드할 수 있습니다.
+
+- 📘 **최종 보고서 (Final Report)**  
+  👉 [Download PDF](https://drive.google.com/file/d/1Sj8vWj3bOwZ4r2aniOqXMpG8bIJ3Cr4G/view?usp=drive_link))
+
+<br>
+
 ## 🛠️ Environment Setup
 
 본 프로젝트는 **Docker** 환경에서 실행하는 것을 권장합니다.
@@ -47,6 +56,8 @@ apt-get update && apt-get install -y python3.10
 
 ```
 
+<br>
+
 ## 📁 Installation & Integration
 본 프로젝트는 Transformer4SED를 베이스라인으로 활용합니다. 아래 절차를 반드시 순서대로 따라주세요.
 
@@ -63,12 +74,14 @@ Transformer4SED의 DASM 가이드를 참조하여 필수 라이브러리를 설�
 다음 [구글 Drive](https://drive.google.com/file/d/1i4RadH64GLqQQhkdL7g3QWvXsevN7Nw6/view)에 접속하여 학습된 pt를 다운받으세요.  
 **Step 5. Install dataset**  
 평가 및 학습 데이터셋은 DCASE에서 제공하는 [DATA Generation](https://github.com/DCASE-REPO/DESED_task/blob/master/recipes/dcase2024_task4_baseline/generate_dcase_task4_2024.py)코드를 바탕으로 다운받으세요.  
-DCASE에서 제공하는 Audioset Strong Label 데이터셋과 Synthetic Dataset을 다운바으세요.  
+DCASE에서 제공하는 Audioset Strong Label 데이터셋과 Synthetic Dataset을 다운받으세요.  
 **Step 5. Install dataset**  
 제공된 requirements 파일을 설치하세요  
 ```bash
 pip install -r requirements.txt
 ```
+
+<br>
 
 ## 🚀 Usage
 
@@ -98,4 +111,16 @@ python eval_dqn.py
 ```bash
 python visualize.py
 ```
+### 3. Train
+새로운 모델을 처음부터 학습시키거나 기존 모델을 튜닝하려면 학습 스크립트를 실행합니다.
+`DQN.py`는 강화학습 에이전트(Agent)와 학습 루프를 포함하고 있으며, 실행 시 정해진 에폭(Epoch) 동안 학습이 진행됩니다.
+
+> **Note:** 학습이 완료되면 체크포인트 경로에 새로운 가중치 파일(`.pt`)이 저장됩니다.
+
+```bash
+python DQN.py
+```
+
+
+
 
