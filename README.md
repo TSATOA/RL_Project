@@ -1,7 +1,9 @@
 # 🎵 Bandit DQN: 프레임 단위 정밀 Sound Event Detection을 위한 Deep Q-Network 구현  
 
-
-![Project Status](https://img.shields.io/badge/Status-Active-brightgreen)
+![SED](https://img.shields.io/badge/SED-Sound%20Event%20Detection-orange)
+![RL](https://img.shields.io/badge/RL-DQN%20Agent-red)
+![DCASE](https://img.shields.io/badge/DCASE-Task4%202024-blueviolet)
+![Dataset](https://img.shields.io/badge/Dataset-DESED%20%7C%20Audioset-green)
 ![Python](https://img.shields.io/badge/Python-3.10.18-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0.0-EE4C2C)
 ![CUDA](https://img.shields.io/badge/CUDA-11.4-76B900)
