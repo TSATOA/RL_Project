@@ -77,6 +77,11 @@ git clone https://github.com/cai525/Transformer4SED.git
 <br>
 **Step 3. Move RL code into Transformer4SED**  
 Step 1에서 다운로드한 RL 프로젝트의 모든 소스 코드를 Step 2에서 설치한 Transformer4SED 폴더 내부로 이동(병합)시킵니다.  
+```bash
+# RL_Project 내부의 모든 파일을 Transformer4SED 폴더로 복사/이동
+cp -r ./RL_Project/* ./Transformer4SED/
+cd Transformer4SED
+```
 <br>
 **Step 4. Download pretrained DQN .pt**  
 학습이 완료된 DQN 모델 가중치(.pt) 파일을 다운로드합니다.  
