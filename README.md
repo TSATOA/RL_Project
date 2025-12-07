@@ -28,7 +28,23 @@ Sound Event Detection(SED) 성능을 최적화하는 것을 목표로 합니다.
 본 프로젝트의 최종 산출물은 아래에서 다운로드할 수 있습니다.
 
 - 📘 **최종 보고서 (Final Report)**  
-  👉 [Download PDF](https://drive.google.com/file/d/1Sj8vWj3bOwZ4r2aniOqXMpG8bIJ3Cr4G/view?usp=drive_link))
+  👉 [Download PDF](https://drive.google.com/file/d/1Sj8vWj3bOwZ4r2aniOqXMpG8bIJ3Cr4G/view?usp=drive_link)
+
+<br>
+
+## 📜 Project Structure
+
+```text
+RL_Project/
+│
+├── DQN.py             # DQN 모델 및 학습 루프 (Main Agent)
+├── DQN_pre.py         # Teacher 모델 기반 전처리 및 NPZ 생성
+├── eval_dqn.py        # 프레임 단위 성능 평가 (Evaluation)
+├── visualize.py       # Threshold 변화 및 보상 시각화
+├── new_teacher.py     # DASM 기반 Teacher Model Inference
+├── requirements.txt   # 프로젝트 의존성 라이브러리
+└── README.md          # 프로젝트 문서
+```
 
 <br>
 
