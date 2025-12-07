@@ -63,21 +63,33 @@ apt-get update && apt-get install -y python3.10
 본 프로젝트는 Transformer4SED를 베이스라인으로 활용합니다. 아래 절차를 반드시 순서대로 따라주세요.
 
 **Step 1. Clone repositories**  
-해당 Github의 Repository를 clone하세요.
+본 프로젝트(RL_Project)의 리포지토리를 로컬 환경으로 복제합니다.  
 ```bash
 git clone https://github.com/TSATOA/RL_Project.git
 ```  
 **Step 2. Base Framework Setup (Transformer4SED)**  
-Transformer4SED의 DASM 가이드를 참조하여 필수 라이브러리를 설치합니다. 자세한 내용은 [DASM Readme](https://github.com/cai525/Transformer4SED/blob/main/docs/DASM/readme.md)를 참고하세요.  
+베이스라인이 되는 Transformer4SED 리포지토리를 클론합니다.  
+```bash
+git clone https://github.com/cai525/Transformer4SED.git
+```
+이후, Transformer4SED의 DASM 가이드를 참조하여 필수 라이브러리를 설치합니다.  
+자세한 내용은 [DASM Readme](https://github.com/cai525/Transformer4SED/blob/main/docs/DASM/readme.md)를 참고하세요.  
+<br>
 **Step 3. Move RL code into Transformer4SED**  
-기존 github에 올라온 코드를 모두 Transformer4SED 폴더로 옮기세요.  
+Step 1에서 다운로드한 RL 프로젝트의 모든 소스 코드를 Step 2에서 설치한 Transformer4SED 폴더 내부로 이동(병합)시킵니다.  
+<br>
 **Step 4. Download pretrained DQN .pt**  
-다음 [구글 Drive](https://drive.google.com/file/d/1i4RadH64GLqQQhkdL7g3QWvXsevN7Nw6/view)에 접속하여 학습된 pt를 다운받으세요.  
+학습이 완료된 DQN 모델 가중치(.pt) 파일을 다운로드합니다.  
+  👉 [Download pretrained DQN .pt](https://drive.google.com/file/d/1i4RadH64GLqQQhkdL7g3QWvXsevN7Nw6/view)  
+다운로드한 파일은 프로젝트 내 체크포인트 폴더(예: checkpoints/)에 위치시켜 주세요.  
+<br>
 **Step 5. Install dataset**  
-평가 및 학습 데이터셋은 DCASE에서 제공하는 [DATA Generation](https://github.com/DCASE-REPO/DESED_task/blob/master/recipes/dcase2024_task4_baseline/generate_dcase_task4_2024.py)코드를 바탕으로 다운받으세요.  
+본 프로젝트는 DCASE 2024 Task 4의 AudioSet Strong Label 데이터셋과 Synthetic Dataset을 사용합니다. 데이터셋 다운로드 및 생성은 DCASE 공식 리포지토리의 가이드를 참고하세요.  
+  👉 [DCASE에서 제공되는 DATA Generation 코드](https://github.com/DCASE-REPO/DESED_task/blob/master/recipes/dcase2024_task4_baseline/generate_dcase_task4_2024.py)  
 DCASE에서 제공하는 Audioset Strong Label 데이터셋과 Synthetic Dataset을 다운받으세요.  
-**Step 5. Install dataset**  
-제공된 requirements 파일을 설치하세요  
+<br>
+**Step 6. Install Dependencies**  
+프로젝트 실행에 필요한 추가 의존성 패키지(requirements.txt)를 설치합니다.  
 ```bash
 pip install -r requirements.txt
 ```
