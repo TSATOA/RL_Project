@@ -82,17 +82,23 @@ Step 1에서 다운로드한 RL 프로젝트의 모든 소스 코드를 Step 2�
 cp -r ./RL_Project/* ./Transformer4SED/
 cd Transformer4SED
 ```
+
 <br>
+
 **Step 4. Download pretrained DQN .pt**  
 학습이 완료된 DQN 모델 가중치(.pt) 파일을 다운로드합니다.  
   👉 [Download pretrained DQN .pt](https://drive.google.com/file/d/1i4RadH64GLqQQhkdL7g3QWvXsevN7Nw6/view)  
 다운로드한 파일은 프로젝트 내 체크포인트 폴더(예: checkpoints/)에 위치시켜 주세요.  
+
 <br>
+
 **Step 5. Install dataset**  
 본 프로젝트는 DCASE 2024 Task 4의 AudioSet Strong Label 데이터셋과 Synthetic Dataset을 사용합니다. 데이터셋 다운로드 및 생성은 DCASE 공식 리포지토리의 가이드를 참고하세요.  
   👉 [DCASE에서 제공되는 DATA Generation 코드](https://github.com/DCASE-REPO/DESED_task/blob/master/recipes/dcase2024_task4_baseline/generate_dcase_task4_2024.py)  
 DCASE에서 제공하는 Audioset Strong Label 데이터셋과 Synthetic Dataset을 다운받으세요.  
+
 <br>
+
 **Step 6. Install Dependencies**  
 프로젝트 실행에 필요한 추가 의존성 패키지(requirements.txt)를 설치합니다.  
 ```bash
